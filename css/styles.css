@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+.menu-bar {
+background-color: #e2d634da;
+margin-top: -0.5rem;
+}
+
+.carousel-img {
+margin-top: -8px;
+}
+
+.card-btn {
+background-color:#e2d634da;
+color: black;
+}
+
+.texto-h1{
+padding-bottom: 20px;
+font-family: 'Roboto', sans-serif;
+font-size: 60px;
+}
+
+.image-escuela {
+width: 90%;
+height: 400px;
+margin-left: 60px;
+margin-top: 70px;
+}
+
+.parrafo-escuela {
+text-align: justify;
+}
+
+.footer {
+background: #e2d634da;
+padding-top: 10px;
+padding-bottom: 20px;
+}
+
+.title-contacto {
+font-size: 14px;
+font-weight: 300;
+}
+
+.footer-parrafo {
+margin-top: 30px;
+font-size: 12px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.footer-icons {
+display: flex;
+justify-content: center;
+padding-top: 10px;
+gap: 25px;
+font-size: 14px;
+}
+
+.copyright {
+padding-top: 30px;
+font-size: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: -50px;
+}
+
+.whatsapp-button {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: 33cc33;
+padding: 10px 20px;
+border-radius: 5px;
+display: flex;
+align-items: center;
+}
+
+.whatsapp-button a {
+text-decoration: none;
+color: #fff;
+display: flex;
+align-items: center;
+}
+
+.whatsapp-button-img {
+width: 50px; 
+margin-right: 2px;
+}
+
+.text-wa {
+font-family: 'Montserrat', sans-serif;
+color: black;
+font-size: 12px;
+margin-top: 15px;
+}
+
+.mision-h1 {
+margin-top: 5rem;
+margin-left: 5rem;
+}
+
+.mision {
+display: flex;
+align-items: center;
+padding-top: 2rem;
+padding-bottom: 5rem;
+}
+
+.mision-img {
+width: 30%;
+margin-right: 3rem;
+
+}
+
+.mision-parrafo {
+text-align: justify;
+margin-left: 5rem;
+margin-right: 2rem;
+}
+
+
+.section-vision {
+background: #e2d634da;
+}
+
+.vision {
+display: flex;
+padding-top: 0.5rem;
+padding-bottom: 5rem;
+}
+
+.text-vision {
+margin-left: 77rem;
+padding-top: 5rem;
+}
+
+.vision-parrafo {
+padding-top: 5rem;
+margin-right: 6rem;
+text-align: justify;
+}
+
+.vision-img {
+width: 28%;
+margin-right: 2rem;
+margin-left: 2rem;   
+}

@@ -25,7 +25,7 @@ margin-left: 15px;
 
 .menu-link {
 color: grey;
-font-size: 14px;
+font-size: 12px;
 }
 
 .carousel-img {
@@ -37,11 +37,6 @@ background-color:#e2d634da;
 color: black;
 }
 
-.card-btn a :hover {
-background: black;
-}
-
-
 .texto-h1{
 padding-bottom: 20px;
 font-family: 'Roboto', sans-serif;
@@ -50,9 +45,9 @@ font-size: 60px;
 
 .image-escuela {
 width: 90%;
-height: 400px;
+height: 50vh;
 margin-left: 60px;
-margin-top: 70px;
+margin-top: 6.5rem;
 }
 
 .parrafo-escuela {
@@ -138,15 +133,15 @@ padding-bottom: 5rem;
 }
 
 .mision-img {
-width: 30%;
+width: 50vh;
 margin-right: 3rem;
-
+margin-top: -4rem;
 }
 
 .mision-parrafo {
 text-align: justify;
 margin-left: 5rem;
-margin-right: 2rem;
+margin-right: 6rem;
 }
 
 
@@ -161,21 +156,48 @@ padding-bottom: 5rem;
 }
 
 .text-vision {
-margin-left: 77rem;
+margin-left: 77.5rem;
 padding-top: 5rem;
 }
 
 .vision-parrafo {
-padding-top: 5rem;
+padding-top: 1rem;
 margin-right: 6rem;
+margin-left: 10rem;
 text-align: justify;
 }
 
 .vision-img {
-width: 28%;
+width: 50vh;
 margin-right: 2rem;
 margin-left: 2rem;   
+margin-top: -2rem;
 }
+
+.valor-h1 {
+margin-left: 5rem;
+margin-top: 5rem;
+}
+
+.valores {
+display: flex;
+justify-content: center;
+}
+
+.valor-parrafo {
+text-align: justify;
+margin-top: 1rem;
+margin-right: 10rem;
+margin-left: 5rem;
+}
+
+.valor-img {
+width: 50vh;
+margin-right: 8rem;
+margin-bottom: 5rem;
+margin-top: -2rem;
+}
+
 
 .texto-blog {
 margin-top: 3rem;
@@ -209,6 +231,10 @@ font-size: 20px;
 font-weight: 200;
 }
 
+.check-item:focus {
+background: rgb(253, 253, 210);
+}
+
 .image-page-campus {
 margin-top: -9px;
 width: 100%;
@@ -230,7 +256,13 @@ gap: 2rem;
 align-items: center;
 justify-content: center;
 padding-bottom: 5rem;
+margin-left: -5rem;
 }
+
+.form-item:focus {
+background: rgb(253, 253, 210);
+}
+
 
 .text-box {
 font-size: 12px;
@@ -271,3 +303,210 @@ margin-right: 15rem;
 background-color:#e2d634da;
 }
 
+@media screen and (max-width: 768px) {
+
+.texto-h1 {
+font-size: 40px;
+margin-left: -1rem;
+text-align: center;
+}
+
+.parrafo-escuela {
+text-align: justify;
+margin-right: 1.5rem;
+margin-left: 1.5rem;
+}
+
+.image-escuela {
+width: 90%;
+margin-top: -2rem;
+margin-left: 1.2rem;
+}
+
+.card {
+margin-bottom: 2.5rem;
+}
+
+.mision-h1 {
+margin-left: -1rem;
+}
+
+.mision-img {
+display: none;
+}
+
+.mision-parrafo {
+margin-left: 3rem;
+margin-right: 4rem;
+}
+
+.text-vision {
+margin-left: revert-layer;
+padding-left: -4rem;
+margin-bottom: 2rem;
+}
+
+.vision-img {
+display: none;
+}
+
+.vision-parrafo {
+margin-top: -2rem;
+margin-left: 3rem;
+margin-right: -0.5rem;
+padding-right: 4rem;
+}
+
+.valor-h1 {
+margin-left: -1rem;
+}
+
+.valor-img {
+display: none;
+}
+
+.valor-parrafo {
+margin-left: 0.5rem;
+padding-left: 3rem;
+margin-right: -0.5rem;
+padding-right: 4.5rem;
+padding-bottom: 4rem;
+}
+
+.text-campus-virtual {
+text-align: center;
+margin-right: 2.5rem;
+margin-left: 1.5rem;
+}
+
+.formulario-ingreso {
+padding-left: 1rem;
+}
+
+.text-campus {
+margin-left: 2rem;
+margin-right: 2rem;
+}
+
+.texto-blog {
+margin-left: -1rem ;
+}
+
+.parrafo-blog {
+width: 75%;
+text-align: justify;
+margin-left: 3rem;
+}
+
+.contenedor {
+display: grid;
+grid-template-columns: max-content;
+gap: 2rem;
+justify-content: center;
+}
+
+.box-4 {
+margin-top: -5rem;
+}
+
+.box-7 {
+margin-top: -5rem;
+}
+
+.form-contact {
+width: 50%;
+margin-left: 5rem;
+}
+
+.form-btn {
+width: 50%;
+margin-left: 3rem;
+}
+}
+
+@media screen and (min-width: 768px) {
+
+.image-escuela {
+margin-top: 11rem;
+margin-left: 2rem;
+}
+
+.text-vision {
+text-align: left;
+margin-left: revert-layer;
+padding-left: 6rem;
+}
+
+.mision-img {
+display: none;
+}
+
+.vision-img {
+display: none;
+}
+
+.text-vision {
+margin-left: -1rem;
+}
+
+.vision-parrafo {
+margin-left: 5rem;
+}
+
+
+.valor-img {
+display: none;
+}
+
+.valor-parrafo {
+margin-bottom: 5rem;
+}
+
+.texto-blog {
+margin-left: 3rem;
+}
+
+.parrafo-blog {
+width: 90%;
+margin-left: 3rem;
+}
+
+.text-campus-virtual {
+text-align: center;
+}
+
+.container-form {
+margin-left: -1rem;
+}
+
+.contenedor {
+display: grid;
+grid-template-columns: max-content;
+justify-content: center;
+gap: 2rem;
+}
+
+.box-4 {
+margin-top: -5rem;
+}
+
+.box-7 {
+margin-top: -5rem;
+}
+
+.text-contact {
+margin-left: 1rem;
+}
+
+.form-contact {
+width: 50%;
+margin-left: 13rem;
+margin-right: 8rem;
+}
+    
+.form-btn {
+width: 50%;
+margin-left: 6rem;
+}
+
+}

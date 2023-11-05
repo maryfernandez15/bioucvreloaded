@@ -1,0 +1,190 @@
+
+.section-mision {
+
+    .mision {
+        display: flex;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+        }
+    
+        .mision-h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 60px;
+        margin-top: 5rem;
+        margin-left: 5rem;
+
+        @media screen and (max-width: 768px) {
+        margin-left: -1rem;
+        text-align: center;
+        font-size: 50px
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 50px;
+        text-align: center;
+        margin-right: 5rem;
+        }
+    }
+    
+    .mision-img {
+    width: 50vh;
+    margin-right: 3rem;
+    margin-top: -4rem;
+
+    @media screen and (max-width: 768px) {
+    display: none;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+    display: none;
+    }
+    }
+
+    .mision-parrafo {
+    text-align: justify;
+    margin-left: 5rem;
+    margin-right: 6rem;
+    
+        @media screen and (max-width: 768px) {
+        margin-left: 3rem;
+        margin-right: 4rem;
+        }
+        
+    }
+
+}
+
+
+.section-vision {
+    
+    background: rgb(236, 227, 213);
+    
+    .vision {
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 5rem;
+    }
+    
+    .text-vision {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    margin-left: 59rem;
+    padding-top: 5rem;
+
+        @media screen and (max-width: 768px) {
+        text-align: center;
+        font-size: 50px;
+        margin-left: revert-layer;
+        padding-left: -4rem;
+        margin-bottom: 2rem;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 50px;
+        text-align: center;
+        margin-right: 5rem;
+        margin-left: revert-layer;
+        padding-left: 6rem;
+        margin-left: -1rem;
+        }
+        }
+    }
+    
+    .vision-parrafo {
+        padding-top: 1rem;
+        margin-right: 6rem;
+        margin-left: 10rem;
+        text-align: justify;
+
+        @media screen and (max-width: 768px) {
+        margin-top: -2rem;
+        margin-left: 3rem;
+        margin-right: -0.5rem;
+        padding-right: 4rem;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        margin-left: 5rem;
+        }
+    }
+    
+    .vision-img {
+        width: 50vh;
+        margin-right: 2rem;
+        margin-left: 4rem;   
+        margin-top: -2rem;
+
+        @media screen and (max-width: 768px) {
+        display: none;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        display: none;
+        }
+    }
+
+.section-valores { 
+
+    .valor-h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 60px;
+        margin-left: 5rem;
+        margin-top: 5rem;
+
+        @media screen and (max-width: 768px) {
+        margin-left: -1rem;
+        text-align: center;
+        font-size: 50px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 50px;
+        text-align: center;
+        margin-right: 5rem;
+        }
+    }
+    
+    .valores {
+    display: flex;
+    justify-content: center;
+    }
+    
+    .valor-parrafo {
+        text-align: justify;
+        margin-top: 1rem;
+        margin-right: 6rem;
+        margin-left: 5.5rem;
+
+        @media screen and (max-width: 768px) {
+        margin-left: 0.5rem;
+        padding-left: 3rem;
+        margin-right: -0.5rem;
+        padding-right: 4.5rem;
+        padding-bottom: 4rem;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        margin-bottom: 5rem;
+        }
+    }
+    
+    .valor-img {
+        width: 50vh;
+        margin-right: 8rem;
+        margin-bottom: 5rem;
+        margin-top: -1rem;
+        
+        @media screen and (max-width: 768px) {
+            display: none;
+    }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        display: none;
+        }
+}  
+}
+
+
+
+

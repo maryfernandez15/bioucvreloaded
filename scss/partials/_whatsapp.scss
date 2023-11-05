@@ -1,0 +1,30 @@
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: 33cc33;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+    a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    }
+
+    .whatsapp-button-img {
+    width: 50px; 
+    margin-right: 2px;
+    }
+
+    .text-wa {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 12px;
+    margin-top: 15px;
+    font-weight: bolder;
+    }    
+}

@@ -1,0 +1,39 @@
+.footer {
+    background: $colorPrincipal;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    .title-contacto {
+    font-size: 14px;
+    font-weight: bolder;
+    }
+
+    .footer-parrafo {
+    margin-top: 30px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+        
+    .footer-icons {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 25px;
+    font-size: 14px;
+    }
+        
+    .copyright {
+    padding-top: 30px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: -50px;
+    }
+}
+    
+    
+    
+   

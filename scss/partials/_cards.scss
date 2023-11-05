@@ -1,0 +1,16 @@
+
+.card-btn {
+background-color:$colorPrincipal;
+color: black;
+}
+
+.tarjeta-h {
+font-family: "Roboto Condensed", sans-serif;
+font-size: 28px;
+}
+
+@media screen and (max-width: 768px) {
+.card {
+margin-bottom: 2.5rem;
+}
+}

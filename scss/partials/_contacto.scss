@@ -1,0 +1,61 @@
+.section-contacto { 
+
+        .text-button {
+        background-color: $colorPrincipal;
+        }
+    
+        .text-contact {
+        font-family: 'Roboto', sans-serif;
+        font-size: 60px;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        margin-left: 1rem;
+        font-size: 50px;
+        }
+    }
+    
+    .img-contact {
+    width: 100%;
+    height: auto;
+    padding-bottom: 3rem;
+    }
+    
+    .form-contact {
+        display: flex;
+        margin-left: 25rem;
+        margin-right: 25rem;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 5rem;
+
+        @media screen and (max-width: 768px) {
+        width: 50%;
+        margin-left: 11rem;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        width: 50%;
+        margin-left: 13rem;
+        margin-right: 8rem;
+        }
+    }
+    
+    .form-btn {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    background-color:$colorPrincipal;
+    
+    @media screen and (max-width: 768px) {
+    width: 50%;  
+    margin-left: 6rem;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+    width: 50%;
+    margin-left: 6.5rem;
+    }
+}
+}

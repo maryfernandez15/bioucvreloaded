@@ -1,0 +1,52 @@
+    
+.inicio { 
+    
+        .texto-h1 {
+        padding-bottom: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 60px;
+
+        @media screen and (max-width: 768px) {
+        font-size: 50px;
+        margin-left: -1rem;
+        text-align: center;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 50px;
+        margin-left: 0.5rem;
+        }
+        }
+    
+    .image-escuela {
+        width: 90%;
+        height: 50vh;
+        margin-left: 60px;
+        margin-top: 6.5rem;
+
+        @media screen and (max-width: 768px) {
+        width: 90%;
+        margin-top: -2rem;
+        margin-left: 1.2rem;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        margin-top: 6rem;
+        margin-left: 2rem;
+        }
+    }
+    
+    .parrafo-escuela {
+        text-align: justify;
+
+        @media screen and (max-width: 768px) {
+        text-align: justify;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        text-align: justify;
+        }
+}
+}

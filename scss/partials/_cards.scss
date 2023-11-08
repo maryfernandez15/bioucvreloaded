@@ -1,4 +1,3 @@
-
 .card-btn {
 background-color:$colorPrincipal;
 color: black;
@@ -8,6 +7,21 @@ color: black;
 font-family: "Roboto Condensed", sans-serif;
 font-size: 28px;
 }
+
+.tarjeta-inicio {
+transition-property: all;
+transition-duration: 0.5s;
+transition-delay: 0s;
+transition-timing-function: ease-out;
+}
+
+.tarjeta-inicio:hover {
+transform: scale(1.02);
+border: rgb(255, 241, 216);
+background-color: rgb(255, 241, 216);
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
 
 @media screen and (max-width: 768px) {
 .card {

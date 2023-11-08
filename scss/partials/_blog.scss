@@ -52,6 +52,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
+        
 
         @media screen and (max-width: 768px) {
         display: grid;
@@ -96,5 +97,10 @@
     .box-7 {
     margin-top: -5rem;
     }
+    }
 
+    .box:hover {
+        transform: scale(1.1);
+        transition: all;
+        transition-duration: 1s;
     }

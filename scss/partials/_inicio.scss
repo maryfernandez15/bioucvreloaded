@@ -35,9 +35,16 @@
         margin-left: 2rem;
         }
     }
-    
+
+    .image-escuela:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: scale(1.1);
+    transition: all;
+    transition-duration: 1s;
+    }
+
     .parrafo-escuela {
-        text-align: justify;
+    text-align: justify;
 
         @media screen and (max-width: 768px) {
         text-align: justify;
@@ -50,3 +57,6 @@
         }
 }
 }
+
+.text-focus-in{animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) .25s both}
+ @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}

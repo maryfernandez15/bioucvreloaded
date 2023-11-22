@@ -15,14 +15,12 @@
   margin-top: -0.8rem;
   padding-bottom: 2rem;
 }
-
 .menu-bar .logo {
   font-family: "Roboto Condensed", sans-serif;
   color: black;
   font-size: 26px;
   margin-left: 15px;
 }
-
 .menu-bar .menu-link {
   color: grey;
   font-size: 14px;
@@ -34,12 +32,10 @@
   padding-top: 10px;
   padding-bottom: 20px;
 }
-
 .footer .title-contacto {
   font-size: 14px;
   font-weight: bolder;
 }
-
 .footer .footer-parrafo {
   margin-top: 30px;
   font-size: 12px;
@@ -47,7 +43,6 @@
   flex-direction: column;
   align-items: center;
 }
-
 .footer .footer-icons {
   display: flex;
   justify-content: center;
@@ -55,7 +50,6 @@
   gap: 25px;
   font-size: 14px;
 }
-
 .footer .copyright {
   padding-top: 30px;
   font-size: 10px;
@@ -75,19 +69,16 @@
   display: flex;
   align-items: center;
 }
-
 .whatsapp-button a {
   text-decoration: none;
   color: #fff;
   display: flex;
   align-items: center;
 }
-
 .whatsapp-button .whatsapp-button-img {
   width: 50px;
   margin-right: 2px;
 }
-
 .whatsapp-button .text-wa {
   font-family: "Montserrat", sans-serif;
   color: black;
@@ -101,7 +92,6 @@
   font-family: "Roboto", sans-serif;
   font-size: 60px;
 }
-
 @media screen and (max-width: 768px) {
   .inicio .texto-h1 {
     font-size: 50px;
@@ -121,7 +111,6 @@
   margin-left: 60px;
   margin-top: 6.5rem;
 }
-
 @media screen and (max-width: 768px) {
   .inicio .image-escuela {
     width: 90%;
@@ -135,10 +124,15 @@
     margin-left: 2rem;
   }
 }
+.inicio .image-escuela:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transform: scale(1.1);
+  transition: all;
+  transition-duration: 1s;
+}
 .inicio .parrafo-escuela {
   text-align: justify;
 }
-
 @media screen and (max-width: 768px) {
   .inicio .parrafo-escuela {
     text-align: justify;
@@ -149,6 +143,21 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .inicio .parrafo-escuela {
     text-align: justify;
+  }
+}
+
+.text-focus-in {
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.25s both;
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
   }
 }
 .carousel-img {
@@ -165,6 +174,20 @@
   font-size: 28px;
 }
 
+.tarjeta-inicio {
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: ease-out;
+}
+
+.tarjeta-inicio:hover {
+  transform: scale(1.02);
+  border: rgb(255, 241, 216);
+  background-color: rgb(255, 241, 216);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
 @media screen and (max-width: 768px) {
   .card {
     margin-bottom: 2.5rem;
@@ -176,14 +199,24 @@
   padding-top: 2rem;
   padding-bottom: 5rem;
 }
-
+@media screen and (max-width: 768px) {
+  .section-mision .mision {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .section-mision .mision {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
 .section-mision .mision-h1 {
   font-family: "Roboto", sans-serif;
   font-size: 60px;
   margin-top: 5rem;
   margin-left: 5rem;
 }
-
 @media screen and (max-width: 768px) {
   .section-mision .mision-h1 {
     margin-left: -1rem;
@@ -198,51 +231,54 @@
     margin-right: 5rem;
   }
 }
-.section-mision .mision-img {
+
+.mision-img {
   width: 50vh;
   margin-right: 3rem;
   margin-top: -4rem;
 }
 
-@media screen and (max-width: 768px) {
-  .section-mision .mision-img {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .section-mision .mision-img {
-    display: none;
-  }
-}
-.section-mision .mision-parrafo {
+.mision-parrafo {
   text-align: justify;
   margin-left: 5rem;
   margin-right: 6rem;
 }
-
 @media screen and (max-width: 768px) {
-  .section-mision .mision-parrafo {
+  .mision-parrafo {
     margin-left: 3rem;
     margin-right: 4rem;
   }
 }
+
 .section-vision {
   background: rgb(236, 227, 213);
 }
-
 .section-vision .vision {
   display: flex;
+  align-items: center;
   padding-top: 0.5rem;
   padding-bottom: 5rem;
 }
-
+@media screen and (max-width: 768px) {
+  .section-vision .vision {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .section-vision .vision {
+    flex-direction: column-reverse;
+  }
+}
+.section-vision .section-vision-cont {
+  text-align: center;
+}
 .section-vision .text-vision {
   font-family: "Roboto", sans-serif;
   font-size: 60px;
-  margin-left: 59rem;
   padding-top: 5rem;
+  padding-bottom: 3rem;
+  margin-left: 6rem;
 }
-
 @media screen and (max-width: 768px) {
   .section-vision .text-vision {
     text-align: center;
@@ -262,13 +298,13 @@
     margin-left: -1rem;
   }
 }
+
 .vision-parrafo {
   padding-top: 1rem;
   margin-right: 6rem;
   margin-left: 10rem;
   text-align: justify;
 }
-
 @media screen and (max-width: 768px) {
   .vision-parrafo {
     margin-top: -2rem;
@@ -282,35 +318,26 @@
     margin-left: 5rem;
   }
 }
+
 .vision-img {
   width: 50vh;
   margin-right: 2rem;
   margin-left: 4rem;
-  margin-top: -2rem;
+  margin-top: 4rem;
 }
 
-@media screen and (max-width: 768px) {
-  .vision-img {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .vision-img {
-    display: none;
-  }
-}
 .section-valores .valor-h1 {
   font-family: "Roboto", sans-serif;
   font-size: 60px;
   margin-left: 5rem;
   margin-top: 5rem;
 }
-
 @media screen and (max-width: 768px) {
   .section-valores .valor-h1 {
     margin-left: -1rem;
     text-align: center;
     font-size: 50px;
+    padding-bottom: 3rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -318,20 +345,29 @@
     font-size: 50px;
     text-align: center;
     margin-right: 5rem;
+    padding-bottom: 3rem;
   }
 }
 .section-valores .valores {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
-
+@media screen and (max-width: 768px) {
+  .section-valores .valores {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .section-valores .valores {
+    flex-direction: column;
+  }
+}
 .section-valores .valor-parrafo {
   text-align: justify;
   margin-top: 1rem;
   margin-right: 6rem;
   margin-left: 5.5rem;
 }
-
 @media screen and (max-width: 768px) {
   .section-valores .valor-parrafo {
     margin-left: 0.5rem;
@@ -352,24 +388,81 @@
   margin-bottom: 5rem;
   margin-top: -1rem;
 }
-
 @media screen and (max-width: 768px) {
   .section-valores .valor-img {
-    display: none;
+    margin-left: 7.5rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .section-valores .valor-img {
-    display: none;
+    margin-left: 6.5rem;
   }
 }
+
+.text-focus-in {
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.5s both;
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.comunidad-img {
+  width: 40%;
+  border-radius: 50%;
+  background-color: rgb(221, 216, 216);
+  padding: 2.5rem;
+}
+
+.comunidad-items {
+  display: flex;
+  row-gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-item {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.circle-item:hover {
+  scale: 110%;
+}
+
+.comunidad-img:hover {
+  background-color: rgba(226, 214, 52, 0.8549019608);
+}
+
+.title-item-campus {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+}
+
+.parrafo-campus {
+  margin-top: 5rem;
+  text-align: center;
+  margin-right: 8rem;
+  margin-left: 8rem;
+  margin-bottom: 5rem;
+}
+
 .text-campus-virtual {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 60px;
+  margin-top: 5rem;
   margin-bottom: 3rem;
 }
-
 @media screen and (max-width: 768px) {
   .text-campus-virtual {
     margin-right: 2.5rem;
@@ -384,18 +477,19 @@
     font-size: 50px;
   }
 }
+
 .text-campus {
   text-align: center;
   padding-bottom: 2rem;
   font-size: 14px;
 }
-
 @media screen and (max-width: 768px) {
   .text-campus {
     margin-left: 2rem;
     margin-right: 2rem;
   }
 }
+
 .image-page-campus {
   margin-top: -9px;
   width: 100%;
@@ -413,7 +507,6 @@
   padding-bottom: 5rem;
   margin-left: -5rem;
 }
-
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .container-form {
     margin-left: -1rem;
@@ -422,11 +515,9 @@
 .container-form .check-item:focus {
   background: rgb(253, 253, 210);
 }
-
 .container-form .form-item:focus {
   background: rgb(253, 253, 210);
 }
-
 .container-form .text-box {
   font-size: 12px;
 }
@@ -442,7 +533,6 @@
   margin-right: 10rem;
   margin-top: 3rem;
 }
-
 @media screen and (max-width: 768px) {
   .parrafo-blog {
     width: 75%;
@@ -457,13 +547,13 @@
     margin-left: 6.5rem;
   }
 }
+
 .texto-blog {
   font-family: "Roboto", sans-serif;
   font-size: 60px;
   margin-top: 3rem;
   margin-left: 4rem;
 }
-
 @media screen and (max-width: 768px) {
   .texto-blog {
     margin-left: -1rem;
@@ -477,17 +567,18 @@
     margin-right: 2rem;
   }
 }
+
 .text-blog {
   font-size: 20px;
   font-weight: 200;
   color: darkblue;
 }
-
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .text-blog {
     margin-left: 1rem;
   }
 }
+
 .contenedor {
   margin-top: 5rem;
   margin-bottom: 7rem;
@@ -495,7 +586,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
-
 @media screen and (max-width: 768px) {
   .contenedor {
     display: grid;
@@ -512,6 +602,7 @@
     gap: 2rem;
   }
 }
+
 .box {
   display: flex;
   flex-direction: column;
@@ -535,10 +626,15 @@
     margin-top: -5rem;
   }
 }
+.box:hover {
+  transform: scale(1.1);
+  transition: all;
+  transition-duration: 1s;
+}
+
 .section-contacto .text-button {
   background-color: rgba(226, 214, 52, 0.8549019608);
 }
-
 .section-contacto .text-contact {
   font-family: "Roboto", sans-serif;
   font-size: 60px;
@@ -546,7 +642,6 @@
   margin-top: 1rem;
   padding-bottom: 1rem;
 }
-
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .section-contacto .text-contact {
     margin-left: 1rem;
@@ -558,7 +653,6 @@
   height: auto;
   padding-bottom: 3rem;
 }
-
 .section-contacto .form-contact {
   display: flex;
   margin-left: 25rem;
@@ -567,7 +661,6 @@
   justify-content: center;
   padding-bottom: 5rem;
 }
-
 @media screen and (max-width: 768px) {
   .section-contacto .form-contact {
     width: 50%;
@@ -586,7 +679,6 @@
   margin-right: 15rem;
   background-color: rgba(226, 214, 52, 0.8549019608);
 }
-
 @media screen and (max-width: 768px) {
   .section-contacto .form-btn {
     width: 50%;
@@ -598,6 +690,4 @@
     width: 50%;
     margin-left: 6.5rem;
   }
-} 
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

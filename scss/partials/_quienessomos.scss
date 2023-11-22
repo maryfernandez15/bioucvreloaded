@@ -6,7 +6,17 @@
         align-items: center;
         padding-top: 2rem;
         padding-bottom: 5rem;
+        
+        @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap:5rem;
         }
+    
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        flex-direction: column;
+        gap:5rem;
+        }
+    }
     
         .mision-h1 {
         font-family: 'Roboto', sans-serif;
@@ -26,20 +36,14 @@
         margin-right: 5rem;
         }
     }
+}
     
     .mision-img {
     width: 50vh;
     margin-right: 3rem;
     margin-top: -4rem;
-
-    @media screen and (max-width: 768px) {
-    display: none;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 992px) {
-    display: none;
-    }
-    }
+}
+    
 
     .mision-parrafo {
     text-align: justify;
@@ -53,24 +57,36 @@
         
     }
 
-}
-
-
 .section-vision {
     
     background: rgb(236, 227, 213);
     
     .vision {
     display: flex;
+    align-items: center;
     padding-top: 0.5rem;
     padding-bottom: 5rem;
+
+    @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
     }
-    
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+    flex-direction: column-reverse;
+    }
+}
+
+    .section-vision-cont {
+    text-align: center;
+    }
+
     .text-vision {
     font-family: 'Roboto', sans-serif;
     font-size: 60px;
-    margin-left: 59rem;
     padding-top: 5rem;
+    padding-bottom: 3rem;
+    margin-left: 6rem;
+
 
         @media screen and (max-width: 768px) {
         text-align: center;
@@ -113,15 +129,7 @@
         width: 50vh;
         margin-right: 2rem;
         margin-left: 4rem;   
-        margin-top: -2rem;
-
-        @media screen and (max-width: 768px) {
-        display: none;
-        }
-
-        @media screen and (min-width: 768px) and (max-width: 992px) {
-        display: none;
-        }
+        margin-top: 4rem;
     }
 
 .section-valores { 
@@ -136,18 +144,28 @@
         margin-left: -1rem;
         text-align: center;
         font-size: 50px;
+        padding-bottom: 3rem;
         }
 
         @media screen and (min-width: 768px) and (max-width: 992px) {
         font-size: 50px;
         text-align: center;
         margin-right: 5rem;
+        padding-bottom: 3rem;
         }
     }
     
     .valores {
     display: flex;
-    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+    flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+    flex-direction: column;
+    }
     }
     
     .valor-parrafo {
@@ -174,14 +192,14 @@
         margin-right: 8rem;
         margin-bottom: 5rem;
         margin-top: -1rem;
-        
-        @media screen and (max-width: 768px) {
-            display: none;
-    }
 
-        @media screen and (min-width: 768px) and (max-width: 992px) {
-        display: none;
+        @media screen and (max-width: 768px) {
+        margin-left: 7.5rem;
         }
+    
+            @media screen and (min-width: 768px) and (max-width: 992px) {
+                margin-left: 6.5rem;
+            }
 }  
 }
 
